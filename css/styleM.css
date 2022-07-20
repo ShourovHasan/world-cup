@@ -1,0 +1,263 @@
+/* google font poppins  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
+
+/* common css */
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* headers */
+.banner_header {
+    background-color: #161616;
+    border-radius: 30px;
+    width: 1321px;
+    height: 646px;
+    margin: 50px auto 130px;
+}
+
+.banner_content {
+    display: flex;
+    width: 100%;
+}
+
+.banner_content .banner_info {
+    color: white;
+    width: 50%;
+    padding: 111px 24px 111px 106px;
+}
+
+.banner_info h1 {
+    font-weight: 700px;
+    font-size: 70px;
+}
+
+.banner_info p {
+    font-weight: 400px;
+    font-size: 16px;
+    margin-left: 0;
+    color: #FFFFFF;
+}
+
+.banner_info .info_button {
+    background-color: #DD0000;
+    width: 187px;
+    height: 56px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_info .info_button a,
+p {
+    color: white;
+    font-weight: 400px;
+}
+
+.banner_info .info_button a {
+    font-weight: 400px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+.banner_content .banner_sports {
+    width: 50%;
+    padding: 33px 80px 0 0;
+}
+
+.banner_content .banner_sports img {
+    width: 100%;
+    height: 94%;
+}
+
+/* ------------------
+     Match start  
+     -----------*/
+.matches_section {
+    width: 1321px;
+    height: auto;
+    margin: 0 auto 130px;
+    background-color: white;
+}
+
+.matches_content {
+    width: 100%;
+    display: flex;
+}
+
+.matches_content .matches_menu {
+    width: 20%;
+    height: 20%;
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 15px;
+}
+
+.matches_content .matches_menu a {
+    text-decoration: none;
+    background-color: white;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    border-radius: 7px;
+    font-weight: 500px;
+    color: #161616;
+    font-size: 20px;
+}
+
+.matches_content .matches_menu a:nth-child(2) {
+    margin: 30px 0;
+}
+
+.matches_content .matches_menu a:nth-child(1) {
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+
+/* start matches  */
+.matches_content .matches {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.matches .match {
+    width: 70%;
+    height: 200px;
+    border-radius: 7px;
+    padding: 53px 30px 30px 30px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20px;
+    margin-bottom: 24px;
+}
+.matches .match .flags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vs{
+    padding: 0 20px;
+}
+.matches .match .flags img{
+    width: 90%;
+}
+
+.match_info h3, p{
+    color: #161616;
+    text-align: center;
+}
+/* 
+.matches .match img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.blogs .blog a,
+p {
+    color: #161616;
+    margin-left: 20px;
+}
+
+.blogs .blog a {
+    text-decoration: none;
+    border: 1px solid #161616;
+    border-radius: 3px;
+    width: 100px;
+    height: 32px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.blogs .blog p {
+    font-weight: 600px;
+    font-size: 18px;
+}
+
+.blogs .blog p:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+.blogs .blog p span {
+    margin-right: 30px;
+}
+
+.blogs .blog p span i {
+    margin-right: 10px;
+} */
+
+/* ---------------
+       Footer Start 
+---------------------- */
+.footer_section {
+    width: 100%;
+    height: 444px;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content {
+    width: 90%;
+    height: 300px;
+    color: #FFFFFF;
+    /* background-color: aqua; */
+}
+
+.footer_content .footer_title {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content .footer_title h1 {
+    text-align: center;
+    align-items: center;
+    font-weight: 600px;
+    font-size: 40px;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_content .footer_services {
+    height: 50%;
+    margin: 50px 10px;
+    text-align: center;
+}
+
+.footer_items a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500px;
+    margin-right: 10px;
+}
+
+.footer_social {
+    margin-top: 20px;
+}
+
+.footer_social a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+/* Footer End  */
+/* Media Query start  */
+/* For Mobile  */
+@media screen and (min-width:688px) {}
