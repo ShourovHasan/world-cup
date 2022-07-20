@@ -13,6 +13,10 @@ body{
     width: 1321px;
     height: 646px;
     margin: 50px auto 130px;
+    transition: box-shadow 1s;
+}
+.banner_header:hover{
+    box-shadow: 5px 5px 35px 0 rgba(0, 0, 0, 0.545), 0 5px 50px 0 rgba(0, 0, 0, 0.419);
 }
 .banner_content{
     display: flex;
@@ -51,7 +55,6 @@ body{
     font-size: 16px;
     text-decoration: none;
     margin-right: 20px;
-    
 }
 .banner_content .banner_sports{
     width: 50%;
@@ -81,7 +84,12 @@ body{
     border-radius: 10px;
     padding: 30px;
     margin-right: 15px;
+    transition: box-shadow 1s;
 }
+.blogs_content .blogs_menu:hover{
+    box-shadow: 1px 5px 35px 0 rgba(0, 0, 0, 0.363), 0 5px 50px 0 rgba(0, 0, 0, 0.419);
+}
+
 .blogs_content .blogs_menu a{
     text-decoration: none;
     background-color: white;
@@ -104,7 +112,7 @@ body{
     color: #FFFFFF;
 }
 .blogs_content .blogs{
-    width: 75%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -114,6 +122,10 @@ body{
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
     margin-left: 25px;
     margin-bottom: 24px;
+    transition: box-shadow 1s;
+}
+.blogs .blog:hover{
+    box-shadow: 1px 5px 35px 0 rgba(0, 0, 0, 0.179), 0 5px 50px 0 rgba(0, 0, 0, 0.289);
 }
 .blogs .blog img{
     width: 100%;
@@ -148,7 +160,18 @@ body{
 .blogs .blog p span i{
     margin-right: 10px;
 }
-
+.view_all a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #DD0000;
+    display: block;
+    padding: 12px 29px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    visibility: hidden;
+}
 /* ---------------
        Footer Start 
 ---------------------- */
@@ -205,6 +228,109 @@ hr{
 /* Footer End  */
 /* Media Query start  */
 /* For Mobile  */
-@media screen and (min-width:688px){
-    
+@media only screen and (max-width:767px) and (min-width:0px) {
+    /* banner  */
+    .banner_header {
+        width: auto;
+        height: auto;
+        margin: 50px auto;
+    }
+    .banner_content{
+        display: block;
+    }
+    .banner_content .banner_info{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .banner_info .info_button{
+        margin: auto;
+    }
+    .banner_content .banner_sports{
+        width: 100%;
+    }
+    .banner_content .banner_sports img {
+        width: 100%;
+        height: 100%;
+    }
+    /* blogs  */
+    .blogs_section{
+        width: 100%;
+        height: auto;
+    }
+    .blogs_content{
+        display: block;
+    }
+    .blogs_content .blogs_menu {
+        background-color: #FFFFFF;
+        margin: auto;
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .blogs_content .blogs_menu a {
+        border: 1px solid #E8E8E8;
+    }
+    .blogs_content .blogs {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* footer  */
+    .footer_section {
+        height: 700px;
+    }
+    .footer_content .footer_title{
+        height: 20%;
+    }
+    .footer_content .footer_services{
+        height: 80%;
+    }
+    .footer_services .footer_items{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_services .footer_items a{
+        margin-top: 20px;
+    }
+}
+/* For Tablet */
+@media only screen and (min-width:768px) and (max-width:992px){
+    .banner_header{
+        width: 100%;
+        height: auto;
+    }
+    .banner_content .banner_sports img {
+        width: 100%;
+        height: 100%;
+    }
+    .blogs_section{
+        width: 100%;
+        height: auto;
+    }
+    .blogs_content{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .blogs_content .blogs_menu{
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .blogs_content .blogs_menu a{
+        border: 1px solid #E8E8E8;
+    }
+    .blogs_content .blogs_menu a:nth-child(2){
+        margin: 0 20px;
+    }
+    .blogs_content .blogs {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+    }
+    .view_all a{
+            visibility: visible;
+    }
 }

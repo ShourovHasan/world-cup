@@ -14,8 +14,11 @@ body {
     width: 1321px;
     height: 646px;
     margin: 50px auto 130px;
+    transition: box-shadow 1s;
 }
-
+.banner_header:hover {
+    box-shadow: 5px 5px 35px 0 rgba(0, 0, 0, 0.545), 0 5px 50px 0 rgba(0, 0, 0, 0.419);
+}
 .banner_content {
     display: flex;
     width: 100%;
@@ -36,6 +39,7 @@ body {
     font-weight: 400px;
     font-size: 16px;
     margin-left: 0;
+    text-align: left;
     color: #FFFFFF;
 }
 
@@ -95,8 +99,11 @@ p {
     border-radius: 10px;
     padding: 30px;
     margin-right: 15px;
+    transition: box-shadow 1s;
 }
-
+.matches_content .matches_menu:hover{
+        box-shadow: 1px 5px 35px 0 rgba(0, 0, 0, 0.363), 0 5px 50px 0 rgba(0, 0, 0, 0.419);
+}
 .matches_content .matches_menu a {
     text-decoration: none;
     background-color: white;
@@ -136,6 +143,10 @@ p {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
     margin-left: 20px;
     margin-bottom: 24px;
+    transition: box-shadow 1s;
+}
+.matches .match:hover{
+    box-shadow: 1px 5px 35px 0 rgba(0, 0, 0, 0.179), 0 5px 50px 0 rgba(0, 0, 0, 0.289);
 }
 .matches .match .flags{
     display: flex;
@@ -153,48 +164,18 @@ p {
     color: #161616;
     text-align: center;
 }
-/* 
-.matches .match img {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.blogs .blog a,
-p {
-    color: #161616;
-    margin-left: 20px;
-}
-
-.blogs .blog a {
+.view_all a {
     text-decoration: none;
-    border: 1px solid #161616;
-    border-radius: 3px;
-    width: 100px;
-    height: 32px;
-    padding: 5px 10px;
-    margin-bottom: 15px;
-    margin-top: 20px;
-}
-
-.blogs .blog p {
-    font-weight: 600px;
-    font-size: 18px;
-}
-
-.blogs .blog p:last-child {
+    color: #FFFFFF;
+    background-color: #DD0000;
+    display: block;
+    padding: 12px 29px;
+    border-radius: 5px;
     font-weight: 400;
-    font-size: 16px;
-    color: rgba(22, 22, 22, 0.7);
+    font-size: 20px;
+    text-align: center;
+    visibility: hidden;
 }
-
-.blogs .blog p span {
-    margin-right: 30px;
-}
-
-.blogs .blog p span i {
-    margin-right: 10px;
-} */
-
 /* ---------------
        Footer Start 
 ---------------------- */
@@ -216,7 +197,6 @@ p {
 
 .footer_content .footer_title {
     height: 50%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -260,4 +240,132 @@ hr {
 /* Footer End  */
 /* Media Query start  */
 /* For Mobile  */
-@media screen and (min-width:688px) {}
+@media only screen and (max-width:767px) and (min-width:0px) {
+
+    /* banner  */
+    .banner_header {
+        width: auto;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .banner_content {
+        display: block;
+    }
+
+    .banner_content .banner_info {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .banner_info .info_button {
+        margin: auto;
+    }
+
+    .banner_content .banner_sports {
+        width: 100%;
+    }
+
+    .banner_content .banner_sports img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* matches  */
+    .matches_section {
+        width: 100%;
+        height: auto;
+    }
+
+    .matches_content {
+        display: block;
+    }
+
+    .matches_content .matches_menu {
+        background-color: #FFFFFF;
+        margin: auto;
+        width: 60%;
+        margin-bottom: 40px;
+    }
+
+    .matches_content .matches_menu a {
+        border: 1px solid #E8E8E8;
+    }
+
+    .matches_content .matches {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* footer  */
+    .footer_section {
+        height: 700px;
+    }
+
+    .footer_content .footer_title {
+        height: 20%;
+    }
+
+    .footer_content .footer_services {
+        height: 80%;
+    }
+
+    .footer_services .footer_items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_services .footer_items a {
+        margin-top: 20px;
+    }
+}
+/* For Tablet */
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .banner_header {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner_content .banner_sports img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .matches_section {
+        width: 100%;
+        height: auto;
+    }
+
+    .matches_content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .matches_content .matches_menu {
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .matches_content .matches_menu a {
+        border: 1px solid #E8E8E8;
+    }
+
+    .matches_content .matches_menu a:nth-child(2) {
+        margin: 0 20px;
+    }
+
+    .matches_content .matches {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view_all a {
+        visibility: visible;
+    }
+}
